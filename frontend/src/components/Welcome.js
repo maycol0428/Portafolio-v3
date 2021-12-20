@@ -77,6 +77,12 @@ const Luck = styled.div`
   position: absolute;
   bottom: 0;
   opacity: 1;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+  pointer-events: none;
   /* transform: rotate(180deg); */
 `;
 const ButtonStyled = styled.div`

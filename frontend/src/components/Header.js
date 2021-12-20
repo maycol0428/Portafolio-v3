@@ -203,9 +203,9 @@ const HamburguerItem = styled.a`
     background: linear-gradient(to right, black, #050505, black);
     border: 1px solid #9e8f54;
     color: #9e8f54;
+    position: relative;
     div {
       ::after {
-        opacity: 1;
         background-color: #9e8f54;
       }
     }
