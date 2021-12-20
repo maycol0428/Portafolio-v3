@@ -90,7 +90,7 @@ const Contacto = ({ title }) => {
             textAnchor="middle"
             stroke="#757575"
           >
-            M O O N
+            {"M A N Ä"}
           </text>
         </svg>
       </Luck>
