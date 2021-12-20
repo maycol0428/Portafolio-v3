@@ -367,13 +367,21 @@ const Luck = styled.div`
   }
 `;
 const Frase = styled.p`
-  width: 100%;
   text-align: center;
+  font-family: Imperial Script;
   font-family: Luxurious Script;
   margin-top: 30px;
+  word-spacing: 6px;
   margin-bottom: 30px;
-  color: #5a0601;
-  opacity: 0.7;
-  filter: brightness(50%);
-  font-size: clamp(13px, 4vw, 30px);
+  color: #ed1602;
+  color: #787878;
+  font-weight: 400;
+  letter-spacing: 2px;
+  opacity: 0.3;
+  margin-left: 30px;
+  margin-right: 30px;
+  white-space: pre-wrap;
+  /* opacity: 1;
+  filter: brightness(100%); */
+  font-size: clamp(25px, 6vw, 30px);
 `;
