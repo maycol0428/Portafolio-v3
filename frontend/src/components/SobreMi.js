@@ -54,6 +54,7 @@ const SobreMi = ({ title }) => {
             <div className="wrapper">
               <img className="img" src={yoIMG} alt="Headshot" />
               <div className="background-img"></div>
+              <div className="background-img2"></div>
             </div>
           </Pic>
         </ContainerWrapper>
@@ -72,37 +73,68 @@ export default SobreMi;
 const Pic = styled.div`
   position: relative;
   max-width: 300px;
+  .wrapper .background-img2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 50px;
+    left: 50px;
+    z-index: -1;
+    border: 2px solid #8a7d49;
+    transition: all 0.2s ease;
+    @media ${deviceMinWidth.tablet} {
+      bottom: 60px;
+      left: 60px;
+    }
+    @media ${deviceMinWidth.laptop} {
+      bottom: 70px;
+      left: 70px;
+    }
+  }
+  .wrapper:hover .background-img2 {
+    bottom: 40px;
+    left: 40px;
+    @media ${deviceMinWidth.tablet} {
+      bottom: 30px;
+      left: 30px;
+    }
+    @media ${deviceMinWidth.laptop} {
+      bottom: 25px;
+      left: 25px;
+    }
+  }
   .wrapper .background-img {
-    border: 3px solid black;
+    border: 1px solid black;
     position: absolute;
     width: 100%;
     top: 0;
     height: 100%;
     background: linear-gradient(to right, #080808, transparent, #080808);
     pointer-events: none;
+    transition: all 0.15s ease;
     ::after {
       transition: width 0.1s ease, height 0.4s ease, opacity 0.3s ease;
       content: "";
       z-index: 9;
       position: absolute;
-      width: calc(100% - 10px);
-      height: calc(100% - 10px);
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      border: 1px solid black;
+      border: 1px solid #5e5e5e;
       background: transparent;
-      /* opacity: 0.5; */
+      opacity: 0.3;
     }
     ::before {
-      transition: opacity 0.3s ease;
+      transition: opacity 0.15s ease;
       content: "&";
       color: #5e5e5e;
       position: absolute;
-      top: 50%;
+      bottom: 0;
       left: 50%;
       text-align: center;
-      transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+      transform: translateX(-50%) translateY(-20%) rotate(-45deg);
       font-family: Luxurious Script;
       font-size: clamp(80px, 8vw, 100px);
       font-weight: 100;
@@ -237,7 +269,7 @@ const Pic = styled.div`
 
   .wrapper:hover .img,
   .wrapper:focus .img {
-    filter: none;
+    filter: brightness(70%);
     mix-blend-mode: normal;
   }
 
@@ -246,9 +278,10 @@ const Pic = styled.div`
     object-position: top right;
     position: relative;
     mix-blend-mode: multiply;
-    filter: grayscale(10%) contrast(1) brightness(50%) saturate(200%);
+    filter: grayscale(10%) contrast(1) brightness(50%) saturate(150%);
     transition: var(--transition);
     position: relative;
+    border-radius: 7px;
   }
 `;
 
