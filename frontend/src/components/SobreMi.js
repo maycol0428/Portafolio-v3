@@ -84,7 +84,7 @@ const Pic = styled.div`
     background: linear-gradient(to right, #080808, transparent, #080808);
     pointer-events: none;
     ::after {
-      transition: width 0.2s ease, height 0.5s ease, opacity 0.7s ease;
+      transition: width 0.1s ease, height 0.4s ease, opacity 0.3s ease;
       content: "";
       z-index: 9;
       position: absolute;
@@ -214,12 +214,13 @@ const Pic = styled.div`
   }
 
   .wrapper::after {
-    border: 2px solid #999273;
+    border: 2px solid #8a7d49;
     background: linear-gradient(to right, #080808, #0a0a0a, #080808);
     top: 20px;
     left: 20px;
     z-index: -1;
-    background: url(${dragonIMG});
+    /* background: url(${dragonIMG}); */
+    background: transparent;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -249,7 +250,7 @@ const Pic = styled.div`
     object-position: top right;
     position: relative;
     mix-blend-mode: multiply;
-    filter: grayscale(0%) contrast(1) brightness(30%);
+    filter: grayscale(10%) contrast(1) brightness(50%) saturate(200%);
     transition: var(--transition);
     position: relative;
   }

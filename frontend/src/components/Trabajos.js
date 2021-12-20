@@ -188,11 +188,11 @@ const ButtonPaginateDefault = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: clamp(25px, 4vw, 50px);
+  padding-top: clamp(40px, 10vw, 80px);
   button {
     border: 1px solid #6b6139;
     color: #424242;
-    padding: 10px 20px;
+    padding: clamp(15px, 3vw, 30px) clamp(25px, 3vw, 40px);
     font-weight: 600;
     background: linear-gradient(to right, #8a7d49, #c1b891, #8a7d49);
     transition: all 0.2s ease;

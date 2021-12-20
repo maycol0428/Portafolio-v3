@@ -39,10 +39,10 @@ const Header = () => {
           {laptopDevice ? (
             <MenuItems>
               <div>
-                <a href="#welcome">01. INICIO</a>
-                <a href="#sobremi">02. SOBRE MI</a>
-                <a href="#trabajos">03. TRABAJOS</a>
-                <a href="#contacto">04. CONTACTO</a>
+                <a href="#welcome">00. INICIO</a>
+                <a href="#sobremi">01. SOBRE MI</a>
+                <a href="#trabajos">02. TRABAJOS</a>
+                <a href="#contacto">03. CONTACTO</a>
               </div>
               <a href={PDFFILE} target={"_blank"}>
                 RESUMEN
@@ -62,28 +62,28 @@ const Header = () => {
                   style={{ "--i": 1.15, "--acc": 1, "--sobremi": "'01.'" }}
                 >
                   {" "}
-                  <div>01.INICIO</div>
+                  <div>00.INICIO</div>
                 </HamburguerItem>
                 <HamburguerItem
                   href="#sobremi"
                   className={`hamburguer1 ${!showHamburguerItems || "show"}`}
                   style={{ "--i": 1.3, "--acc": 1.1, "--sobremi": "'02.'" }}
                 >
-                  <div>02.SOBREMI</div>
+                  <div>01.SOBREMI</div>
                 </HamburguerItem>
                 <HamburguerItem
                   href="#trabajos"
                   className={`hamburguer2 ${!showHamburguerItems || "show"}`}
                   style={{ "--i": 1.45, "--acc": 1.2 }}
                 >
-                  <div>03.TRABAJOS</div>
+                  <div>02.TRABAJOS</div>
                 </HamburguerItem>
                 <HamburguerItem
                   href="#contacto"
                   className={`hamburguer3 ${!showHamburguerItems || "show"}`}
                   style={{ "--i": 1.6, "--acc": 1.2 }}
                 >
-                  <div>04.CONTACTO</div>
+                  <div>03.CONTACTO</div>
                 </HamburguerItem>
                 <HamburguerItem
                   href={PDFFILE}
