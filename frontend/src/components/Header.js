@@ -1,11 +1,7 @@
 import { Backdrop, useMediaQuery } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { color } from "../utils/style/Colors";
-import Logo from "./Logo";
-import { deviceMinWidth, devicePx } from "../utils/style/BreakPoints";
-import HeaderMenuHamburguer from "./HeaderMenuHamburguer";
-import Underline from "../components/shared/Underline";
+import { deviceMinWidth } from "../utils/style/BreakPoints";
 import PDFFILE from "../files/cv.pdf";
 const Header = () => {
   const laptopDevice = useMediaQuery(deviceMinWidth.laptop);
@@ -30,11 +26,13 @@ const Header = () => {
   }, [laptopDevice]);
   return (
     <>
-      <_Header>
+      <HeaderStyled>
         <Menu>
-          <_Logo className={[`logomenu  ${!scrollDown || "scrolldown"} ${!showHamburguerItems || "show-in-logo"}`]}>
-            <a href="#">M</a>
-          </_Logo>
+          <LogoStyled
+            className={[`logomenu  ${!scrollDown || "scrolldown"} ${!showHamburguerItems || "show-in-logo"}`]}
+          >
+            <a href="/">M</a>
+          </LogoStyled>
 
           {laptopDevice ? (
             <MenuItems>
@@ -44,7 +42,7 @@ const Header = () => {
                 <a href="#trabajos">02. TRABAJOS</a>
                 <a href="#contacto">03. CONTACTO</a>
               </div>
-              <a href={PDFFILE} target={"_blank"}>
+              <a href={PDFFILE} target="_blank" rel="noreferrer">
                 RESUMEN
               </a>
             </MenuItems>
@@ -97,7 +95,7 @@ const Header = () => {
             </Hamburguer>
           )}
         </Menu>
-      </_Header>
+      </HeaderStyled>
     </>
   );
 };
@@ -264,7 +262,7 @@ const Hamburguer = styled.div`
     }
   }
 `;
-const _Header = styled.div`
+const HeaderStyled = styled.div`
   z-index: 999;
   height: 50px;
   position: fixed;
@@ -288,7 +286,7 @@ const Menu = styled.div`
   padding: 10px 20px;
   background-color: black;
 `;
-const _Logo = styled.div`
+const LogoStyled = styled.div`
   &.logomenu {
     opacity: 1;
     color: #757575;

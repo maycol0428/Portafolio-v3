@@ -1,12 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../utils/style/Colors";
 import Subtitle from "./shared/Subtitle";
 import Underline from "./shared/Underline";
 import yoIMG from "../static/yo.jpg";
-import BorderImageGradient from "./shared/BorderImageGradient";
 import { deviceMinWidth, devicePx } from "../utils/style/BreakPoints";
-import dragonIMG from "../static/dragon.jpg";
 const skills = [
   "React",
   "React Native",
@@ -219,7 +216,6 @@ const Pic = styled.div`
     top: 20px;
     left: 20px;
     z-index: -1;
-    /* background: url(${dragonIMG}); */
     background: transparent;
     background-position: center;
     background-repeat: no-repeat;

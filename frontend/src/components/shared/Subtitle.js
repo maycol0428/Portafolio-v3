@@ -1,8 +1,5 @@
-import { Paper } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
-import { deviceMinWidth } from "../../utils/style/BreakPoints";
-import { color } from "../../utils/style/Colors";
 import { size } from "../../utils/style/FontSize";
 const Subtitle = ({ title, color }) => {
   return (

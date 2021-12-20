@@ -2,14 +2,11 @@ import React, { useEffect, useState } from "react";
 import Subtitle from "./shared/Subtitle";
 import axios from "axios";
 import styled from "styled-components";
-import { color } from "../utils/style/Colors";
-import TrabajoCard from "./TrabajoCard";
-import TrabajosDestacados from "./TrabajosDestacados";
 import intagramIMG from "../static/Instagram-v2-clone.png";
 import SpotifyIMG from "../static/Spotify-clone.jpg";
 import uberEats1IMG from "../static/Uber-eats-clone.jpg";
 import amazonv1IMG from "../static/amazon-v1-clone.png";
-import { device, deviceMinWidth, devicePx } from "../utils/style/BreakPoints";
+import { deviceMinWidth, devicePx } from "../utils/style/BreakPoints";
 const destacadosArray = [
   { name: "amazon-v1-clone", image: [{ url: amazonv1IMG }] },
   { name: "Instagram-v2-clone", image: [{ url: intagramIMG }] },
@@ -38,6 +35,7 @@ const Trabajos = ({ title }) => {
         if (des.length > 0) {
           return [repo, ...des];
         }
+        return null;
       });
       setDestacadaos(_destacados);
     }

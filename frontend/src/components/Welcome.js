@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Player } from "@lottiefiles/react-lottie-player";
 import styled from "styled-components";
-import { FilePdf } from "@styled-icons/boxicons-solid";
-import { Button } from "../utils/style/GlobalStyled";
-import { color } from "../utils/style/Colors";
-import { size } from "../utils/style/FontSize";
-import { device, deviceMinWidth, devicePx } from "../utils/style/BreakPoints";
-import AnimationCode from "../animations/code.json";
+import { deviceMinWidth, devicePx } from "../utils/style/BreakPoints";
 import PDFcv from "../files/cv.pdf";
 import UnderLine from "./shared/Underline";
 const Welcome = () => {
-  const [hoverButtonPFG, setHoverButtonPFG] = useState(false);
   const [scrollDown, setScrollDown] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", (e) => {
@@ -27,7 +20,7 @@ const Welcome = () => {
         <Title className="title">
           <h1>Maycol Christian EM.</h1>
           <div className={`logofondo ${!scrollDown || "scrolldown"}`}>
-            <a href="#">M</a>
+            <a href="/">M</a>
           </div>
         </Title>
         <Title className="subtitle">
@@ -78,14 +71,7 @@ const WelcomeStyled = styled.div`
   /* position: relative;
   z-index: 999; */
 `;
-const WelcomeSubtitle = styled.div`
-  h2 {
-    background-color: black;
-    color: white;
-    mix-blend-mode: multiply;
-    font-size: 50px;
-  }
-`;
+
 const Luck = styled.div`
   filter: blur(1px);
   position: absolute;

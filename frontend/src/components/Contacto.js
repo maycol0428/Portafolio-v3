@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../utils/style/Colors";
-import Subtitle from "./shared/Subtitle";
-import { Facebook, Github, Instagram, InstagramAlt, Whatsapp } from "@styled-icons/boxicons-logos";
+import { Facebook, Github, InstagramAlt } from "@styled-icons/boxicons-logos";
 import { Gmail } from "@styled-icons/simple-icons";
-import UnderLine from "./shared/Underline";
-import cityIMG from "../static/city.jpg";
-import { deviceMinWidth, devicePx } from "../utils/style/BreakPoints";
+import { deviceMinWidth } from "../utils/style/BreakPoints";
 import { size } from "../utils/style/FontSize";
 const Contacto = ({ title }) => {
   return (

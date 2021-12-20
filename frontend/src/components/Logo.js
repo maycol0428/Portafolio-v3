@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { color } from "../utils/style/Colors";
-import { ReactLogo } from "@styled-icons/boxicons-logos/ReactLogo";
-import { Javascript } from "@styled-icons/boxicons-logos/Javascript";
-import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
-import { SECTIONS_ID } from "../utils/constantes/sections";
-import { device, deviceMinWidth } from "../utils/style/BreakPoints";
+import { deviceMinWidth } from "../utils/style/BreakPoints";
 import { Backdrop } from "@mui/material";
 const Logo = () => {
   const [scrollDown, setScrollDown] = useState(false);
-  const [sectionId, setSectionId] = useState("welcome");
   useEffect(() => {
     window.addEventListener("scroll", (e) => {
       if (document.documentElement.scrollTop > 10) {
@@ -106,9 +100,9 @@ const Logo = () => {
   return (
     <Header>
       <Menu>
-        <_Logo className={["logomenu", !scrollDown || "scrolldown"]}>
-          <a href="#">M</a>
-        </_Logo>
+        <LogoStyled className={["logomenu", !scrollDown || "scrolldown"]}>
+          <a href="/">M</a>
+        </LogoStyled>
 
         <Hamburguer>
           <div className="lineamiddle"></div>
@@ -177,7 +171,7 @@ const Menu = styled.div`
   padding: 10px 20px;
   background-color: black;
 `;
-const _Logo = styled.div`
+const LogoStyled = styled.div`
   &.logomenu {
     opacity: 0.3;
     color: #757575;

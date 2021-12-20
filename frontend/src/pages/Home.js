@@ -3,20 +3,10 @@ import Header from "../components/Header";
 import SobreMi from "../components/SobreMi";
 import Welcome from "../components/Welcome";
 import styled from "styled-components";
-import { devicePx } from "../utils/style/BreakPoints";
 import Trabajos from "../components/Trabajos";
 import Contacto from "../components/Contacto";
-import bosqueURL from "../static/bosque1.jpg";
-import dragonIMG from "../static/dragon.jpg";
 import lunaIMG from "../static/luna.jpg";
-import cityIMG from "../static/city.jpg";
-import fondoIMG from "../static/fondo.jpg";
-import fondo2IMG from "../static/fondo2.jpg";
-import fondo3IMG from "../static/fondo3.jpg";
-import fondo4IMG from "../static/fondo4.jpg";
-import fondo6IMG from "../static/fondo6.jpg";
-import { color } from "../utils/style/Colors";
-import Subtitle from "../components/shared/Subtitle";
+
 const sections = [
   {
     title: "Welcome",

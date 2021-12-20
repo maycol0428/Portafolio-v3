@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { color } from "../../utils/style/Colors";
 
 const Underline = ({ children, color }) => {
   return <Container style={{ color }}>{children}</Container>;
