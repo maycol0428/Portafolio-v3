@@ -3,7 +3,7 @@ import Subtitle from "./shared/Subtitle";
 import axios from "axios";
 import styled from "styled-components";
 import intagramIMG from "../static/Instagram-v2-clone.png";
-import SpotifyIMG from "../static/Spotify-clone.jpg";
+import SpotifyIMG from "../static/Spotify-clone.png";
 import uberEats1IMG from "../static/Uber-eats-clone.jpg";
 import amazonv1IMG from "../static/amazon-v1-clone.png";
 import { deviceMinWidth, devicePx } from "../utils/style/BreakPoints";
