@@ -1,0 +1,121 @@
+@import-normalize;
+
+:root {
+  --green: #64ffda;
+  --transition: all 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --navy-dark: #020c1b;
+  --navy: #0a192f;
+  --border-radius: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: inherit;
+  font-family: "Roboto";
+}
+
+/* Remove default padding */
+ul[class],
+ol[class],
+button,
+a {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+
+body,
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow: auto;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none; */
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #757575;
+  -webkit-border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
