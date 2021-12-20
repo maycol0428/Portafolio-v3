@@ -91,9 +91,23 @@ const Trabajos = ({ title }) => {
                       <img className="img" src={des.image[0].url} alt="Headshot" />
                       <div className="background-img"></div>
                       <div className="img-info-work">
-                        <button>Github</button>
+                        <button
+                          onClick={(e) => {
+                            window.open(des.svn_url);
+                          }}
+                        >
+                          Github
+                        </button>
                         <span>{des.name.replaceAll("-", " ")}</span>
-                        <button>Web</button>
+                        <button
+                          onClick={(e) => {
+                            if (des.homepage) {
+                              window.open(des.homepage);
+                            }
+                          }}
+                        >
+                          Web
+                        </button>
                       </div>
                     </div>
                   </Pic>
