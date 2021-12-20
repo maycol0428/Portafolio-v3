@@ -125,6 +125,7 @@ const Section = styled.section`
     ::before {
       content: "";
       position: absolute;
+      top: 0;
       left: 20px;
       width: 1px;
       height: 100%;

@@ -67,7 +67,7 @@ const Header = () => {
                   className={`hamburguer1 ${!showHamburguerItems || "show"}`}
                   style={{ "--i": 1.3, "--acc": 1.1, "--sobremi": "'02.'" }}
                 >
-                  <div>01.SOBREMI</div>
+                  <div>01.SOBRE MI</div>
                 </HamburguerItem>
                 <HamburguerItem
                   href="#trabajos"
@@ -89,7 +89,7 @@ const Header = () => {
                   className={`hamburguer4 hambuerguer-item-pdf ${!showHamburguerItems || "show"}`}
                   style={{ "--i": 1, "--acc": 1.7 }}
                 >
-                  <div>REDUMEN</div>
+                  <div>RESUMEN</div>
                 </HamburguerItem>
               </HamburguerItems>
             </Hamburguer>

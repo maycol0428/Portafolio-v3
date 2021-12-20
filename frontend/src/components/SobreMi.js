@@ -430,7 +430,7 @@ const Adornos = styled.span`
   }
   &.frase {
     color: #5a0601;
-    top: 15px;
+    top: 60px;
     right: 0;
     max-width: 80px;
     font-size: 10px;
@@ -444,24 +444,30 @@ const Adornos = styled.span`
       top: 0;
     }
     @media ${deviceMinWidth.mobileL} {
+      top: calc(55px + 1vw);
       max-width: 100px;
       right: 10px;
       font-size: 12px;
     }
     @media ${deviceMinWidth.tablet} {
-      top: 60px;
       max-width: 120px;
+      top: calc(55px + 3vw);
       right: 20px;
     }
     @media ${deviceMinWidth.laptop} {
       right: calc(50px + 1vw);
       font-size: 14px;
+      top: calc(50px + 3vw);
       max-width: 120px;
     }
     @media ${deviceMinWidth.laptopL} {
       right: calc(100px + 10vw);
+      top: calc(70px + 1vw);
       font-size: 14px;
       max-width: 120px;
+    }
+    @media ${deviceMinWidth.desktop} {
+      top: calc(80px);
     }
   }
 `;
